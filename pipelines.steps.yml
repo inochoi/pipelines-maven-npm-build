@@ -101,7 +101,7 @@ pipelines:
       - name: promote_app_build
         type: PromoteBuild
         configuration:
-          targetRepository: demo-pipelines
+          targetRepository: docker-local
           integrations:
             - name: Artifactory
           inputResources:
