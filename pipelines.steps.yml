@@ -17,11 +17,10 @@ pipelines:
             image:
               auto:
                 language: java
-                versions:
-                  - "11"
+
         execution:
           onStart:
-            - java -version
+            - javac -version
             - mvn --version
  
 #       - name: bld_frontend
