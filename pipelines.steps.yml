@@ -94,7 +94,7 @@ pipelines:
         configuration:
           forceXrayScan: false
           inputSteps:
-            - name: build_app
+            - name: bld_backend
           outputResources:
             - name: appl_build_info
  
