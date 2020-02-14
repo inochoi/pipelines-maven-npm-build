@@ -100,7 +100,7 @@ pipelines:
       - name: promote_app_build
         type: PromoteBuild
         configuration:
-          targetRepository: libs-release-local
+          targetRepository: docker-local
           integrations:
             - name: Artifactory
           inputResources:
