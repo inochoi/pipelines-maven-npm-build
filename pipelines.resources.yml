@@ -38,8 +38,7 @@ resources:
       buildName: backend_build
       buildNumber: 1
   
-  # Crontrigger
-  - name: cron_trigger
-    type: CronTrigger
+  - name: incoming_basic_hook
+    type: IncomingWebhook
     configuration:
-      interval: '*/1 * * * *'
+      webhookName: in_hook_basic
