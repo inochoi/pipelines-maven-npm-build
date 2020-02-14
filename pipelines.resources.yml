@@ -41,5 +41,5 @@ resources:
   - name: incoming_basic_hook
     type: Webhook
     configuration:
-      webhookName: hook
+      integrationName: Webhook
       payload: read_json payload.json
