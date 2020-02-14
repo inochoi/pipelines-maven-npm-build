@@ -37,3 +37,9 @@ resources:
       sourceArtifactory: Artifactory
       buildName: backend_build
       buildNumber: 1
+  
+  # Crontrigger
+  - name: cron_trigger
+    type: CronTrigger
+    configuration:
+      interval: '*/1 * * * *'
