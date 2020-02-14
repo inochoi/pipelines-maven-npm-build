@@ -1,9 +1,4 @@
 resources:
-  # Cron Trigger
-  - name: cron_trigger
-    type: CronTrigger
-    configuration:
-      interval: "0 0/1 * 1/1 * ? *"
 
   # Git repo for back-end source
   - name: be_gitRepo
@@ -11,6 +6,10 @@ resources:
     configuration:
       path: inochoi/pipelines-maven-npm-build
       gitProvider: myGitHub
+      branches:
+        include: master
+      buildOn:
+        commit: true
  
   # Git repo for front-end source
   - name: fe_gitRepo
@@ -18,6 +17,10 @@ resources:
     configuration:
       path: inochoi/pipelines-maven-npm-build
       gitProvider: myGitHub
+      branches:
+        include: master
+      buildOn:
+        commit: true
  
   # Build info for the application
   - name: appl_build_info
