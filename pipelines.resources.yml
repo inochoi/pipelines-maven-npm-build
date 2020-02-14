@@ -38,8 +38,8 @@ resources:
       buildName: backend_build
       buildNumber: 1
   
-  - name: incoming_basic_hook
-    type: Webhook
-    configuration:
-      webhookName: Webhook
-      payload: read_json payload.json
+  # - name: incoming_basic_hook
+  #   type: Webhook
+  #   configuration:
+  #     webhookName: Webhook
+  #     payload: read_json payload.json
