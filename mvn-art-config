@@ -5,6 +5,6 @@ resolver:
   releaseRepo: libs-release
   serverID: Artifactory
 deployer:
-  snapshotRepo: libs-snapshot-local
-  releaseRepo: libs-release-local
+  snapshotRepo: libs-snapshot
+  releaseRepo: libs-release
   serverID: Artifactory
