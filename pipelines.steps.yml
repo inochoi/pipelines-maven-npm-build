@@ -10,6 +10,7 @@ pipelines:
           configFileName: mvn-art-config
           inputResources:
             - name: be_gitRepo
+              trigger: true
           integrations:
             - name: Artifactory
           runtime:
