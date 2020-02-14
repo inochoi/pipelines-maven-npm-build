@@ -1,4 +1,10 @@
 resources:
+  # Cron Trigger
+  - name: cron_trigger
+    type: CronTrigger
+    configuration:
+      interval: "0 0/1 * 1/1 * ? *"
+
   # Git repo for back-end source
   - name: be_gitRepo
     type: GitRepo
@@ -28,9 +34,3 @@ resources:
       sourceArtifactory: Artifactory
       buildName: backend_build
       buildNumber: 1
-
-# Cron Trigger
-  - name: cron_trigger
-    type: CronTrigger
-    configuration:
-      interval: "0 0/1 * 1/1 * ? *"
