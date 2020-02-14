@@ -40,6 +40,6 @@ resources:
   
   # Crontrigger
   - name: cron_trigger
-    type: CronTrigger
+    type: Crontrigger
     configuration:
       interval: '*/1 * * * *'
