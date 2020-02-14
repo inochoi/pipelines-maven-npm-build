@@ -38,7 +38,7 @@ resources:
       buildName: backend_build
       buildNumber: 1
   
-  # - name: incoming_basic_hook
-  #   type: IncomingWebhook
-  #   configuration:
-  #     webhookName: in_hook_basic
+  - name: incoming_basic_hook
+    type: Webhook
+    configuration:
+      integrationName:: Webhook
