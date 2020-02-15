@@ -11,17 +11,6 @@ resources:
       buildOn:
         commit: true
  
-  # Git repo for front-end source
-  - name: fe_gitRepo
-    type: GitRepo
-    configuration:
-      path: inochoi/pipelines-maven-npm-build
-      gitProvider: myGitHub
-      branches:
-        include: master
-      buildOn:
-        commit: true
- 
   # Build info for the application
   - name: appl_build_info
     type: BuildInfo
@@ -38,8 +27,8 @@ resources:
       buildName: backend_build
       buildNumber: 1
   
-  # - name: incoming_basic_hook
-  #   type: Webhook
-  #   configuration:
-  #     webhookName: Webhook
-  #     payload: read_json payload.json
+  - name: incoming_hook
+    type: Webhook
+    configuration:
+      webhookName: Webhook
+      payload: read_json payload.json

@@ -9,6 +9,7 @@ pipelines:
           configFileLocation: .
           configFileName: mvn-art-config
           inputResources:
+            - name: incoming_hook
             - name: be_gitRepo
               trigger: true
           integrations:
