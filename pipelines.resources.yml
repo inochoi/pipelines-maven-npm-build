@@ -20,14 +20,14 @@ resources:
       buildNumber: 1
  
   # Build info for the promoted application
-  - name: appl_promoted_build_info
+  - name: appl_promoted_build_info_1
     type: BuildInfo
     configuration:
       sourceArtifactory: Artifactory
       buildName: backend_build
       buildNumber: 1
   
-  - name: incoming_hook
+  - name: incoming
     type: Webhook
     configuration:
       webhookName: Webhook
